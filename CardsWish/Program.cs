@@ -119,7 +119,7 @@ namespace CardsWish
                         Print(left);
                         Console.Write("-- ");
                         PrintLine(right);
-                        deck.AddRange(right);
+                        deck.InsertRange(0, right);
                     }
 
                     Console.Write("Собираем в одну: ");
