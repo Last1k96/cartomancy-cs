@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
+// Author is fagg
 namespace CardsWish
 {
     public static class Utils
