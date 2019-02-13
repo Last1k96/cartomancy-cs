@@ -36,9 +36,8 @@ namespace CardsWish
         {
             var deck = new List<Card>();
 
-
-            for (var d = 0; d < 4; d++)
-                for (var i = 0; i < 13; i++)
+            for (var d = 0; d < Card.SymbolsCount; d++)
+                for (var i = 0; i < Card.CardCount; i++)
                     deck.Add(new Card(i, d));
 
             deck.Shuffle();
@@ -150,6 +149,8 @@ namespace CardsWish
             public string Val => Values[_val];
             public string Suit => Symbols[_suit];
             public ConsoleColor Color => Colors[_suit];
+            public static readonly int CardCount = Values.Length;
+            public static readonly int SymbolsCount = Symbols.Length;
 
             public Card(int val, int suit)
             {
