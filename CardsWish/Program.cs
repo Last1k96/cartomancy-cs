@@ -38,8 +38,8 @@ namespace CardsWish
 
 
             for (var d = 0; d < 4; d++)
-            for (var i = 0; i < 9; i++)
-                deck.Add(new Card(i, d));
+                for (var i = 0; i < 13; i++)
+                    deck.Add(new Card(i, d));
 
             deck.Shuffle();
 
@@ -141,8 +141,8 @@ namespace CardsWish
             private static readonly ConsoleColor[] Colors =
                 {ConsoleColor.Red, ConsoleColor.Black, ConsoleColor.Red, ConsoleColor.Black};
 
-            private static readonly string[] Symbols = {"♥", "♠", "♦", "♣"};
-            private static readonly string[] Values = {"6", "7", "8", "9", "10", "В", "Д", "К", "Т"};
+            private static readonly string[] Symbols = { "♥", "♠", "♦", "♣" };
+            private static readonly string[] Values = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "В", "Д", "К", "Т" };
 
             private readonly int _val;
             private readonly int _suit;
